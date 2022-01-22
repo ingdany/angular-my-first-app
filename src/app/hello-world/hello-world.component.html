@@ -1,0 +1,9 @@
+<div class="hello-world">
+    <h1>{{users}}</h1>
+    <h2>Subtitle</h2>
+</div>
+<ul>
+    <li *ngFor="let user of users">
+        <app-user [nameUser]="user"></app-user>
+    </li>
+</ul>
