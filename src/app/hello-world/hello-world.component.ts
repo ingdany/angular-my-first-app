@@ -12,6 +12,6 @@ export class HelloWorldComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  users = ['ryan', 'joe', 'cameron']
+  users = ['Ryan', 'Joe', 'Cameron']
 
 }

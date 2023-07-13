@@ -20,6 +20,19 @@ describe('HelloWorldComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();
+    expect(component).toBeTruthy();    
   });
+
+  it('Verify if have class Hello-World', () => {
+    const fixture = TestBed.createComponent(HelloWorldComponent);
+    const compiled = fixture.debugElement.nativeElement;    
+    expect(compiled.querySelector('div')).toHaveClass('hello-world');
+  });
+
+  it('Verify if we have a Subtitle in h2', () => {
+    const fixture = TestBed.createComponent(HelloWorldComponent);
+    const compiled = fixture.debugElement.nativeElement;    
+    expect(compiled.querySelector('h2').textContent).toContain('Subtitle');
+  }); 
+  
 });
