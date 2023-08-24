@@ -32,12 +32,26 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
+        
+    // reporters: ['progress', 'kjhtml'],
     reporters: ['progress', 'kjhtml'],
+    // htmlReporter: {
+    //   outputFile: 'tests/units.html',
+			
+    //   // Optional
+    //   pageTitle: 'Unit Tests',
+    //   subPageTitle: 'A sample project description',
+    //   groupSuites: true,
+    //   useCompactStyle: true,
+    //   useLegacyStyle: true,
+    //   showOnlyFailed: false
+    // },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['ChromeHeadlessNoSandbox'],
+    // browsers: ['Chrome'],
+    browsers: ['ChromeChromeHeadlessNoSandbox'],
     customLaunchers: {
       ChromeHeadlessNoSandbox: {
         base: 'ChromeHeadless',
